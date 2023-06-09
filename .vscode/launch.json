@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ReadFileSample",
+            "request": "launch",
+            "mainClass": "ReadFileSample",
+            "projectName": "Java_7bc4c8d1"
+        },
+        {
+            "type": "java",
             "name": "Session10_Ex2",
             "request": "launch",
             "mainClass": "Session10_Ex2",
