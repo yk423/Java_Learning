@@ -6,6 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex03_03_03_Janken",
+            "request": "launch",
+            "mainClass": "Ex03_03_03_Janken",
+            "projectName": "Java_7bc4c8d1",
+            "args": [
+                "よよ",
+                "りり",
+                "審判"
+            ]
+        },
+        {
+            "type": "java",
             "name": "Ex02_02_02_Janken",
             "request": "launch",
             "mainClass": "Ex02_02_02_Janken",
