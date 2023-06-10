@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex02_01_01_Janken",
+            "request": "launch",
+            "mainClass": "Ex02_01_01_Janken", 
+            "args": ["よよ", "りり"]
+        },
+        {
+            "type": "java",
+            "name": "Sample2_02_2_drive",
+            "request": "launch",
+            "mainClass": "Sample2_02_2_drive",
+            "projectName": "Java_7bc4c8d1"
+        },
+        {
+            "type": "java",
+            "name": "Sample2_01_1_drive",
+            "request": "launch",
+            "mainClass": "Sample2_01_1_drive",
+            "projectName": "Java_7bc4c8d1"
+        },
+        {
+            "type": "java",
+            "name": "Sample2_02_1_drive",
+            "request": "launch",
+            "mainClass": "Sample2_02_1_drive",
+            "projectName": "Java_7bc4c8d1"
+        },
+        {
+            "type": "java",
             "name": "ReadFileSample",
             "request": "launch",
             "mainClass": "ReadFileSample",
