@@ -9,8 +9,8 @@ public class Ex02_02_02_Player {
     String name; // プレイヤーの名前
     String handStatus; // 何を出したか
 
-    Ex02_02_02_Player(String hs) {
-        this.name = hs;
+    Ex02_02_02_Player(String nm) {
+        this.name = nm; // コマンドライン引数から取得した名をセット
     }
 
     void makeHandStatus() {

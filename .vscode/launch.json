@@ -6,10 +6,25 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ex02_02_02_Janken",
+            "request": "launch",
+            "mainClass": "Ex02_02_02_Janken",
+            "projectName": "Java_7bc4c8d1",
+            "args": [
+                "よよ",
+                "りり",
+                "審判"
+            ]
+        },
+        {
+            "type": "java",
             "name": "Ex02_01_01_Janken",
             "request": "launch",
-            "mainClass": "Ex02_01_01_Janken", 
-            "args": ["よよ", "りり"]
+            "mainClass": "Ex02_01_01_Janken",
+            "args": [
+                "よよ",
+                "りり"
+            ]
         },
         {
             "type": "java",
