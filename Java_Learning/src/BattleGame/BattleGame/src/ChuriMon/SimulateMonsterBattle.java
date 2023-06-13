@@ -1,4 +1,4 @@
-package churimon;
+package ChuriMon;
 
 class SimulateMonsterBattle {
 	public static void main (String[] args) {

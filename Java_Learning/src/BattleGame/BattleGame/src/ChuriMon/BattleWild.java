@@ -1,4 +1,4 @@
-package churimon;
+package ChuriMon;
 
 import java.io.BufferedReader;
 import java.io.IOException;

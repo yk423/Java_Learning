@@ -23,8 +23,8 @@ public class Monster1{
 	public String toString(){
 		String sepalater = " / ";
 		String message = "charactor:" + this.charactor + sepalater +"trainer:" + this.trainer + sepalater + "name:" + this.name + sepalater + "¥n" 
-				+ "lv:" + this.lv + sepalater + "hp:" + this.hp + sepalater + "atk:" + this.atk + sepalater + "def:" + this.def + sepalater + "spd:" + this.spd + sepalater + "¥n"
-				+ "hpMax:" + this.hpMax + sepalater + "wazaNm:" + wazaNm + sepalater + "wazaDmgRate:" + wazaDmgRate;
+				+ "lv:" + this.lv + sepalater + "hp:" + this.hp + sepalater + "atk:" + this.atk + sepalater + "def:" + this.def + sepalater + "spd:" + "¥n"
+				+ this.spd + sepalater + "hpMax:" + this.hpMax + sepalater + "wazaNm:" + wazaNm + sepalater + "wazaDmgRate:" + wazaDmgRate;
 		
 		return message;
 	}
@@ -42,7 +42,7 @@ public class Monster1{
 	// --- モンスターのわざに関する情報をセットする --------------------------
 	void setWaza(String nm, String dmgRate) {
 		// ダメージ倍率のバリデーションチェック
-		String pattern = "^[0-9]+¥.[0-9]$";
+		String pattern = "^[0-9]+¥¥.[0-9]$";
 		if (dmgRate.matches(pattern)) {
 			this.wazaNm = nm;
 			this.wazaDmgRate = dmgRate;
@@ -71,7 +71,6 @@ public class Monster1{
 		BigDecimal bdDef = new BigDecimal(def); 
 		BigDecimal bd1 = new BigDecimal("1");
 		BigDecimal bd120 = new BigDecimal("120");
-//		BigDecimal decimalPointTruncating = new BigDecimal("3"); // 小数点切り捨て桁指定
 		
 		BigDecimal damageSubtractRate = bd1.divide(bd1.add(bdDef.divide(bd120, 2, RoundingMode.DOWN)), 2, RoundingMode.DOWN); // ダメージ減算率計算
 		
