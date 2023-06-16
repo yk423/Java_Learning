@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thymeleafの利用</title>
+</head>
+<body>
+<div th:switch="${data}">
+	<div th:case="1">１です。</div>
+	<div th:case="2">２です。</div>
+	<div th:case="3">３です。</div>
+	<div th:case="*">１～３以外です。</div>
+</div>
+</body>
+</html>

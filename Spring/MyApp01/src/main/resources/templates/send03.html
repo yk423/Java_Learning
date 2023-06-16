@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>データの送信</title>
+</head>
+<body>
+<form action="/receive03" method="post">
+	都道府県：<br>
+	<select name="PREF">
+		<option value="北海道">北海道</option>
+		<option value="東京">東京</option>
+		<option value="大阪">大阪</option>
+		<option value="福岡">福岡</option>
+	</select>
+	<br>
+	部署：<br>
+	<select name="JOBS" size="4" multiple>
+		<option value="人事部">人事部</option>
+		<option value="総務部">総務部</option>
+		<option value="第一営業部">第一営業部</option>
+		<option value="第二営業部">第二営業部</option>
+	</select>
+	<br>
+	<input type="submit" value="送信">
+</form>
+
+</body>
+</html>

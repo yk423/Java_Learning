@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>検索結果</title>
+</head>
+<body>
+<table border="1" th:if="${member} != null">
+	<tr>
+		<th>会員ID</th><th>会員名</th><th>年齢</th>
+	</tr>
+	<tr>
+		<td th:text="${member.id}"></td>
+		<td th:text="${member.name}"></td>
+		<td th:text="${member.age}"></td>
+	</tr>
+</table>
+<div th:if="${member} == null">
+	レコードがありません。
+</div>
+</body>
+</html>

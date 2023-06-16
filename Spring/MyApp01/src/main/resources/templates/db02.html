@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>単一検索</title>
+</head>
+<body>
+<table border="1" th:if="${product} != null">
+	<tr>
+		<th>商品ID</th><th>商品名</th><th>単価</th>
+	</tr>
+	<tr>
+		<td th:text="${product.id}"></td>
+		<td th:text="${product.name}"></td>
+		<td th:text="${product.price}"></td>
+	</tr>
+</table>
+<div th:if="${product} == null">
+	レコードがありません。
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>データの受信</title>
+</head>
+<body>
+性別：<span th:text="${sex}"></span><br>
+好きな科目：
+<span th:each="subject: ${subjects}">
+	<span th:text="${subject}"></span>
+</span>
+</body>
+</html>

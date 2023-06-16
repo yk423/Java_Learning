@@ -1,0 +1,40 @@
+﻿#データベース作成
+CREATE DATABASE sample_db DEFAULT CHARACTER SET utf8;
+
+#Productsテーブル・テーブル作成のSQL文
+CREATE TABLE Products(
+	id VARCHAR(4) PRIMARY KEY,
+	name VARCHAR(20),
+	price INTEGER
+);
+
+
+#Productsテーブル・レコード登録のSQL文
+INSERT INTO Products VALUES('0101', 'みかん', 200);
+INSERT INTO Products VALUES('0102', 'りんご', 300);
+INSERT INTO Products VALUES('0103', 'いちご', 500);
+
+#Membersテーブル・テーブル作成のSQL文
+CREATE TABLE Members(
+	id VARCHAR(3) PRIMARY KEY,
+	name VARCHAR(20),
+	age INTEGER
+);
+
+
+#Membersテーブル・レコード登録のSQL文
+INSERT INTO Members VALUES('001', '山田', 20);
+INSERT INTO Members VALUES('002', '佐藤', 43);
+INSERT INTO Members VALUES('003', '鈴木', 35);
+
+#Usersテーブル・テーブル作成のSQL文
+CREATE TABLE Users(
+	id INT PRIMARY KEY,
+	name VARCHAR(20),
+	email VARCHAR(20),
+	password VARCHAR(50)
+);
+
+#Usersテーブル・レコード登録のSQL文
+INSERT INTO Users VALUES(1, '山田太郎', 'taro@it.com', 'taro');
+INSERT INTO Users VALUES(2, '佐藤花子', 'hanako@it.com', 'hanako');

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>データの受信</title>
+</head>
+<body>
+都道府県：<span th:text="${pref}"></span><br>
+部署：
+<span th:each="job: ${jobs}">
+	<span th:text="${job}"></span>
+</span>
+</body>
+</html>
